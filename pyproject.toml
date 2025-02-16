@@ -1,0 +1,26 @@
+[project]
+name = "app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Vipul", email = "vipul.sarode007@gmail.com" }
+]
+requires-python = ">=3.12.8"
+dependencies = [
+    "aiohttp[speedups]>=3.11.12",
+    "fastapi[standard]>=0.115.8",
+    "loguru>=0.7.3",
+    "openai>=1.63.0",
+    "pydantic-ai>=0.0.24",
+    "pydantic-settings>=2.7.1",
+    "python-dotenv>=1.0.1",
+    "websockets>=14.2",
+]
+
+[project.scripts]
+app = "app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
